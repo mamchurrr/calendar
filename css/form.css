@@ -1,0 +1,98 @@
+body {
+    font-family: 'Palatino Linotype', serif;
+    font-weight: 700;
+    padding: 0px 30px;
+    background-image: url("../img/bg.png");
+}
+
+.container fieldset {
+    width:450px;
+    font-size: 25px;
+    color: aliceblue;
+    background-color: rgba(24, 33, 52, 0.7);
+    margin: 80px auto 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.calendar-select select {
+    width: 300px;
+    height:50px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+input[type="text"]:hover,
+.calendar-select select:hover {
+    box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+}
+
+input[type="text"] {
+    width: 119px;
+    height:50px;
+    font-size: 16px;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+.input-date:first-child {
+    margin-left: 75px;
+    margin-right: 15px;
+}
+
+label {
+    display: block;
+    margin-top: -15px;
+}
+
+label:first-child {
+    margin-left: 75px;
+    margin-right: 109px;
+}
+
+.pick-date-input {
+    display: flex;
+}
+
+.input-date {
+    position: relative;
+}
+
+.input-date::before {
+    font-family: "FontAwesome";
+    content: "\f073";
+    position: absolute;
+    font-size: 18px;
+    top: 15px;
+    left: 115px;
+    color: #2c536c;
+}
+
+input[type="button"] {
+    padding: 13px 30px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="button"]:hover {
+    transition: all 0.5s;
+    background: grey;
+    color: #fff; 
+}
+
+.button-apply {
+    background-color: red;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.calendar-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    margin-right: 75px;
+}

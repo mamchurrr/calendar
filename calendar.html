@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/calendar.css" type="text/css" />
+        <link rel="stylesheet" href="./css/form.css" type="text/css" />
+        <link rel="stylesheet" href="./css/font-awesome.css" type="text/css">
+        <script type="text/javascript" src="./js/calendar.js"></script>
+        <title>Calendar</title>
+    </head>
+    <body>
+        <div class="container">
+            <form name="myForm" action="#">
+                <fieldset>
+                    <legend id="form-header">Pick date</legend>
+                    <div class="calendar-select">
+                        <select name="selectedD" id="date-options">
+                            <option value="custom">Custom</option>
+                            <option value="today" selected="selected">Today</option>
+                            <option value="yesterday">Yesterday</option>
+                            <option value="last7">Last 7 days</option>
+                            <option value="last30">Last 30 days</option>
+                            <option value="last90">Last 90 days</option>
+                        </select>
+                    </div> 
+                    <div class="calendar-select">
+                        <select id="timezone">
+                            <option value="timezone1">Timezone (GMT - 5:00) Eastern time</option>
+                            <option value="timezone2">Timezone (GMT - 5:00) Eastern time</option>
+                        </select>
+                    </div>
+                        
+                    <div class="pick-date-input">
+                        <label for="date-begin">from</label>
+                        <label for="date-final">to</label>
+                    </div>
+                    <div class="pick-date-input">
+                        <div class="input-date">
+                                <input type="text" 
+                                id="date-begin" 
+                                name="date-begin" 
+                                readonly="readonly" 
+                                size="10" 
+                                onclick="showcalendar(this)"/>
+                        </div>
+                        <div class="input-date">
+                                <input type="text" 
+                                id="date-final" 
+                                name="date-final" 
+                                readonly="readonly" 
+                                size="10" 
+                                onclick="showcalendar(this)"/>
+                        </div>
+                    </div>    
+                    <div class="calendar-buttons">
+                        <input type="button" value="Cansel" onclick="cancel()">
+                        <input type="button" value="Apply" class="button-apply" onclick="apply()">
+                    </div>                
+                </fieldset>    
+            </form>
+        </div>
+
+        <script type="text/javascript" src="./js/logic.js"></script>
+    </body>
+</html>
